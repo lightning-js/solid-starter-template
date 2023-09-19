@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
-import { importChunkUrl } from 'vite-plugin-import-chunk-url';
+import { importChunkUrl } from '@lightningjs/vite-plugin-import-chunk-url';
 
 export default defineConfig({
   plugins: [importChunkUrl(), solidPlugin({
@@ -11,6 +11,10 @@ export default defineConfig({
   })],
   resolve: {
     dedupe: ['solid-js'],
+  },
+  optimizeDeps: {
+    include: [],
+    exclude: ['@lightningjs/solid', '@lightningjs/renderer/core', '@lightningjs/renderer/workers/renderer']
   },
   server: {
     hmr: false,

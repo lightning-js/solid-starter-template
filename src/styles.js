@@ -7,6 +7,11 @@ export default {
     fontSize: 100,
     textAlign: 'center'
   },
+  headlineSubText: {
+    width: 1920, height: 170, lineHeight: 170, y: 655, contain: 'both',
+    fontSize: 60,
+    textAlign: 'center'
+  },
   Row: {
     display: 'flex',
     justifyContent: 'spaceBetween',

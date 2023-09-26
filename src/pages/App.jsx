@@ -1,12 +1,17 @@
 import { Route, Routes, useNavigate } from "@solidjs/router";
-import { useFocusManager, View} from "@lightningjs/solid";
+import { View } from "@lightningjs/solid";
+import { useFocusManager } from "@lightningjs/solid-primitives";
 import HelloWorld from './HelloWorld';
 import TextPage from './Text';
 import ButtonsPage from './ButtonsPage';
 import NotFound from './NotFound';
 
 const App = () => {
-  useFocusManager();
+  useFocusManager({
+    m: 'Menu',
+    t: 'Text',
+    b: 'Buttons',
+  });
   const navigate = useNavigate();
 
   return (

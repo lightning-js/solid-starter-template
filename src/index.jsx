@@ -7,11 +7,8 @@ import coreWorkerUrl from './threadx-core-worker.js?importChunkUrl';
 Config.debug = true;
 Config.fontSettings.fontFamily = 'Ubuntu';
 Config.fontSettings.color = 0xffffffff;
-Config.keyMap.m = 'Menu';
-Config.keyMap.t = 'Text';
-Config.keyMap.b = 'Buttons';
 
-const driver = 'threadx';
+const driver = 'main';
 const RenderOptions = {
   coreExtensionModule: coreExtensionModuleUrl,
   threadXCoreWorkerUrl: driver === 'threadx' ? coreWorkerUrl : undefined,

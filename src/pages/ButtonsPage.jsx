@@ -1,4 +1,5 @@
-import { Row, View, Text } from '@lightningjs/solid';
+import { View, Text } from '@lightningjs/solid';
+import { Row } from '@lightningjs/solid-primitives';
 
 const ButtonsPage = () => {
   function onEnter(event, elm) {

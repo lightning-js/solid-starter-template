@@ -1,4 +1,4 @@
-import { View, Text } from '@lightningjs/solid';
+import Button from '../components/Button';
 import { Row } from '@lightningjs/solid-primitives';
 
 const ButtonsPage = () => {
@@ -15,42 +15,6 @@ const ButtonsPage = () => {
     gap: 26,
     y: 400,
     x: 100
-  }
-
-  const ButtonStyle = {
-    width: 386,
-    height: 136,
-    color: '#715cab',
-    focus: {
-      color: '#5a39a2',
-    },
-    disabled: {
-      color: '#291d43',
-    }
-  };
-
-  const ButtonText = {
-    fontSize: 32,
-    lineHeight: ButtonStyle.height,
-    contain: 'width',
-    textAlign: 'center',
-    mountY: -0.35,
-    color: '#F6F6F9',
-    height: ButtonStyle.height,
-    width: ButtonStyle.width,
-    focus: {
-      fontSize: 42
-    }
-  }
-
-  const RoundedRectangle = ['RoundedRectangle', { radius: 65 }];
-  function Button(props) {
-    return (
-      <View {...props} forwardStates animate
-        style={ButtonStyle} shader={RoundedRectangle}>
-        <Text style={ButtonText}>{props.children}</Text>
-      </View>
-    );
   }
 
   return (

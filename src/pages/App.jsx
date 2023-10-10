@@ -16,12 +16,11 @@ const App = () => {
 
   return (
     <View ref={window.APP}
-    aria-label={'Hello World'}
-    onLast={() => history.back()}
-    onText={() => navigate('/text')}
-    onButtons={() => navigate('/buttons')}
-    onMenu={() => navigate('/')} style={{ width: 1920, height: 1080 }}>
-      <View color="#071423" style={{ width: 1920, height: 1080 }} />
+      onLast={() => history.back()}
+      onText={() => navigate('/text')}
+      onButtons={() => navigate('/buttons')}
+      onMenu={() => navigate('/')} style={{ width: 1920, height: 1080 }}>
+      <View color="#071423" />
       <Routes>
         <Route path="/" component={HelloWorld} />
         <Route path="/text" component={TextPage} />

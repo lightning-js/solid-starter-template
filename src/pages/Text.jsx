@@ -10,7 +10,6 @@ const TextPage = () => {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flexStart',
-    color: 0x00000000
   }
 
   const SublineContainer = {
@@ -20,7 +19,6 @@ const TextPage = () => {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'flexStart',
-    color: 0x00000000
   }
 
   const Title = {

@@ -10,7 +10,7 @@ export default defineConfig({
     },
   })],
   resolve: {
-    dedupe: ['solid-js', '@lightningjs/solid'],
+    dedupe: ['solid-js', '@lightningjs/solid', '@lightningjs/renderer'],
   },
   optimizeDeps: {
     include: [],

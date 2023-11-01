@@ -20,7 +20,7 @@ const App = () => {
       onText={() => navigate('/text')}
       onButtons={() => navigate('/buttons')}
       onMenu={() => navigate('/')} style={{ width: 1920, height: 1080 }}>
-      <View color="#071423" />
+      <View color={0x071423ff} />
       <Routes>
         <Route path="/" component={HelloWorld} />
         <Route path="/text" component={TextPage} />

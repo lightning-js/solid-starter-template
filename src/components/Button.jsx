@@ -8,19 +8,19 @@ const styles = {
   container: {
     width: 386,
     height: 136,
-    color: '#000000',
+    color: 0x000000ff,
     alpha: 0.3,
     borderRadius: 30,
-    border: { width: 5, color: '#cc33ff' },
+    border: { width: 5, color: 0xcc33ffff },
     scale: 1,
     focus: {
-      color: ['#58807d', {duration: 2000}],
+      color: [0x58807dff, {duration: 2000}],
       scale: 1.2,
-      border: { width: 5, color: '#ff0000' },
+      border: { width: 5, color: 0xff0000ff },
       alpha: [1, {duration: 1500, delay: 200, timing: "easy-in"}]
     },
     active: {
-      color: '#33ff55'
+      color: 0x33ff55ff
     },
     disabled: {
       alpha: 1,
@@ -34,7 +34,7 @@ styles.text = {
   contain: 'width',
   textAlign: 'center',
   mountY: -0.35,
-  color: '#F6F6F9',
+  color: 0xF6F6F9ff,
   height: styles.container.height,
   width: styles.container.width,
   focus: {
@@ -44,8 +44,7 @@ styles.text = {
 
 export default function Button(props) {
   return (
-    <View {...props} forwardStates animate
-      style={styles.container}>
+    <View {...props} forwardStates animate style={styles.container}>
       <Text style={styles.text}>{props.children}</Text>
     </View>
   );

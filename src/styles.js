@@ -17,7 +17,6 @@ export default {
     justifyContent: 'spaceBetween',
     width: 1760,
     height: 300,
-    color: '00000000',
     gap: 26,
   },
   Column: {
@@ -29,6 +28,5 @@ export default {
     gap: 50,
     y: 200,
     x: 80,
-    color: '00000000'
   },
 };

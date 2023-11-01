@@ -8,9 +8,9 @@ import NotFound from './NotFound';
 
 const App = () => {
   useFocusManager({
-    m: 'Menu',
-    t: 'Text',
-    b: 'Buttons',
+    Menu: 'm',
+    Text: 't',
+    Buttons: 'b',
   });
   const navigate = useNavigate();
 

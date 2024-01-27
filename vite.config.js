@@ -27,4 +27,14 @@ export default defineConfig({
       'Cross-Origin-Embedder-Policy': 'require-corp',
     },
   },
+  test: {
+    browser: {
+      enabled: true,
+      headless: false,
+      provider: "playwright",
+      name: 'webkit'
+    },
+    testTransformMode: { web: ['/.[jt]sx?$/'] },
+    globals: true
+  }
 });

@@ -1,12 +1,8 @@
-import { Route, Routes, useNavigate } from "@solidjs/router";
+import { useNavigate } from "@solidjs/router";
 import { View } from "@lightningjs/solid";
 import { useFocusManager } from "@lightningjs/solid-primitives";
-import HelloWorld from './HelloWorld';
-import TextPage from './Text';
-import ButtonsPage from './ButtonsPage';
-import NotFound from './NotFound';
 
-const App = () => {
+const App = (props) => {
   useFocusManager({
     Menu: 'm',
     Text: 't',
@@ -19,14 +15,9 @@ const App = () => {
       onLast={() => history.back()}
       onText={() => navigate('/text')}
       onButtons={() => navigate('/buttons')}
-      onMenu={() => navigate('/')} style={{ width: 1920, height: 1080 }}>
-      <View color={0x071423ff} />
-      <Routes>
-        <Route path="/" component={HelloWorld} />
-        <Route path="/text" component={TextPage} />
-        <Route path="/buttons" component={ButtonsPage} />
-        <Route path="/*all" component={NotFound} />
-      </Routes>
+      onMenu={() => navigate('/')}>
+        <View color={0x071423ff} />
+        {props.children}
     </View>
   )
 };

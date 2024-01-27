@@ -14,16 +14,21 @@ const styles = {
     border: { width: 5, color: 0xcc33ffff },
     scale: 1,
     focus: {
-      color: [0x58807dff, {duration: 2000}],
+      color: 0x58807dff,
       scale: 1.2,
       border: { width: 5, color: 0xff0000ff },
-      alpha: [1, {duration: 1500, delay: 200, timing: "easy-in"}]
+      alpha: 1,
     },
     active: {
       color: 0x33ff55ff
     },
     disabled: {
       alpha: 1,
+    },
+    transition: { 
+      color: { duration: 0.3 }, 
+      scale: { duration: 0.3 },
+      alpha: {duration: 1500, delay: 200, timing: "easy-in"}
     }
   }
 };
@@ -44,7 +49,7 @@ styles.text = {
 
 export default function Button(props) {
   return (
-    <View {...props} forwardStates animate style={styles.container}>
+    <View {...props} forwardStates style={styles.container}>
       <Text style={styles.text}>{props.children}</Text>
     </View>
   );

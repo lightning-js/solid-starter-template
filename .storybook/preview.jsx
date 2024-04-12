@@ -1,4 +1,5 @@
-import { render, Canvas, View } from '@lightningjs/solid';
+import { render } from '@lightningjs/solid';
+import { useFocusManager } from '@lightningjs/solid-primitives';
 import coreExtensionModuleUrl from '../src/AppCoreExtensions.js?importChunkUrl';
 
 const RenderOptions = {
@@ -9,7 +10,7 @@ const RenderOptions = {
   appHeight: 600
   // deviceLogicalPixelRatio: 1
 };
-
+let dispose;
 const preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
@@ -21,14 +22,17 @@ const preview = {
     },
   },
   decorators: [
-    (Story, ...args) => {
-      const solidRoot = document.createElement("div");
-      RenderOptions.rootId = solidRoot;
-      render(() => <Canvas options={RenderOptions}>
-        <View>
-          <Story />
-        </View>
-      </Canvas>)
+    Story => {
+      const solidRoot = document.createElement('div');
+      // teardown previous render (cleans up keyhandling)
+      dispose && dispose();
+      
+      render(() => {
+        useFocusManager();
+        return <Story />;
+      }, solidRoot).then(d => {
+        dispose = d.dispose;
+      });
       return solidRoot;
     }
   ]

@@ -10,13 +10,17 @@ export default defineConfig({
     },
   })],
   resolve: {
-    dedupe: ['solid-js', '@lightningjs/solid', '@lightningjs/renderer'],
+    alias: {
+      theme: '@lightningjs/l3-ui-theme-base',
+    },
+    dedupe: ['solid-js', '@lightningjs/solid', '@lightningjs/solid-primitives', '@lightningjs/renderer'],
   },
   optimizeDeps: {
     include: [],
     exclude: [
     '@lightningjs/solid',
     '@lightningjs/solid-primitives',
+    '@lightningjs/solid-ui',
     '@lightningjs/renderer/core',
     '@lightningjs/renderer/workers/renderer']
   },

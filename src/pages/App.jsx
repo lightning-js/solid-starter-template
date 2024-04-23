@@ -4,10 +4,15 @@ import { useFocusManager, useAnnouncer } from "@lightningjs/solid-primitives";
 
 const App = (props) => {
   useFocusManager({
-    Announcer: 'a',
-    Menu: 'm',
-    Text: 't',
-    Buttons: 'b',
+    Announcer: ["a"],
+    Menu: ["m"],
+    Escape: ["Escape", 27],
+    Backspace: ["Backspace", 8],
+    Left: ["ArrowLeft", 37],
+    Right: ["ArrowRight", 39],
+    Up: ["ArrowUp", 38],
+    Down: ["ArrowDown", 40],
+    Enter: ["Enter", 13],
   });
   
   const navigate = useNavigate();

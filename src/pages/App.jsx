@@ -6,6 +6,8 @@ const App = (props) => {
   useFocusManager({
     Announcer: ["a"],
     Menu: ["m"],
+    Text: 't',
+    Buttons: 'b',
     Escape: ["Escape", 27],
     Backspace: ["Backspace", 8],
     Left: ["ArrowLeft", 37],

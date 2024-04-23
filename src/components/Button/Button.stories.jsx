@@ -1,12 +1,12 @@
-import Button from './Button';
+import Button from "./Button";
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/solid/writing-stories/introduction
 const meta = {
-  title: 'Example/Button',
+  title: "Example/Button",
   component: Button,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
   },
 };
 
@@ -16,26 +16,26 @@ export default meta;
 export const Primary = {
   args: {
     primary: true,
-    children: 'Button',
+    children: "Button",
   },
 };
 
 export const Secondary = {
   args: {
-    children: 'Button',
+    children: "Button",
   },
 };
 
 export const Large = {
   args: {
-    size: 'large',
-    children: 'Button',
+    size: "large",
+    children: "Button",
   },
 };
 
 export const Small = {
   args: {
-    size: 'small',
-    children: 'Button',
+    size: "small",
+    children: "Button",
   },
 };

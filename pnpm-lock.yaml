@@ -12,14 +12,14 @@ dependencies:
     specifier: ^0.8.3
     version: 0.8.3
   '@lightningjs/solid':
-    specifier: ^0.15.13
-    version: 0.15.13(@lightningjs/renderer@0.8.3)(solid-js@1.8.17)
+    specifier: ^0.15.14
+    version: 0.15.14(@lightningjs/renderer@0.8.3)(solid-js@1.8.17)
   '@lightningjs/solid-primitives':
     specifier: ^0.6.6
-    version: 0.6.6(@lightningjs/solid@0.15.13)(solid-js@1.8.17)
+    version: 0.6.6(@lightningjs/solid@0.15.14)(solid-js@1.8.17)
   '@lightningjs/solid-ui':
     specifier: ^0.13.1
-    version: 0.13.1(@lightningjs/solid-primitives@0.6.6)(@lightningjs/solid@0.15.13)(solid-js@1.8.17)
+    version: 0.13.1(@lightningjs/solid-primitives@0.6.6)(@lightningjs/solid@0.15.14)(solid-js@1.8.17)
   '@solidjs/router':
     specifier: ^0.13.2
     version: 0.13.2(solid-js@1.8.17)
@@ -1679,33 +1679,33 @@ packages:
       memize: 2.1.0
     dev: false
 
-  /@lightningjs/solid-primitives@0.6.6(@lightningjs/solid@0.15.13)(solid-js@1.8.17):
+  /@lightningjs/solid-primitives@0.6.6(@lightningjs/solid@0.15.14)(solid-js@1.8.17):
     resolution: {integrity: sha512-bowP29fXs7z4YJngxGqtM1z6ZMD0NcCI/BAbaU36TJDNVw6esfQ8DYiz7ThKmznG1CS9nYX1LX4XlJFOZMfOBQ==}
     peerDependencies:
       '@lightningjs/solid': '*'
       solid-js: '*'
     dependencies:
-      '@lightningjs/solid': 0.15.13(@lightningjs/renderer@0.8.3)(solid-js@1.8.17)
+      '@lightningjs/solid': 0.15.14(@lightningjs/renderer@0.8.3)(solid-js@1.8.17)
       '@solid-primitives/keyboard': 1.2.8(solid-js@1.8.17)
       '@solid-primitives/scheduled': 1.4.3(solid-js@1.8.17)
       solid-js: 1.8.17
     dev: false
 
-  /@lightningjs/solid-ui@0.13.1(@lightningjs/solid-primitives@0.6.6)(@lightningjs/solid@0.15.13)(solid-js@1.8.17):
+  /@lightningjs/solid-ui@0.13.1(@lightningjs/solid-primitives@0.6.6)(@lightningjs/solid@0.15.14)(solid-js@1.8.17):
     resolution: {integrity: sha512-+xpuIutmuD7fqwVJjELwOOEnRDdoZ5DpvfWkSVE2IRfiWNWn0vBUO/TLPu8hx2+iGnhjzj4vefwMEPxGjskI5w==}
     peerDependencies:
       '@lightningjs/solid': '*'
       '@lightningjs/solid-primitives': '*'
       solid-js: '*'
     dependencies:
-      '@lightningjs/solid': 0.15.13(@lightningjs/renderer@0.8.3)(solid-js@1.8.17)
-      '@lightningjs/solid-primitives': 0.6.6(@lightningjs/solid@0.15.13)(solid-js@1.8.17)
+      '@lightningjs/solid': 0.15.14(@lightningjs/renderer@0.8.3)(solid-js@1.8.17)
+      '@lightningjs/solid-primitives': 0.6.6(@lightningjs/solid@0.15.14)(solid-js@1.8.17)
       '@solid-primitives/refs': 1.0.8(solid-js@1.8.17)
       solid-js: 1.8.17
     dev: false
 
-  /@lightningjs/solid@0.15.13(@lightningjs/renderer@0.8.3)(solid-js@1.8.17):
-    resolution: {integrity: sha512-t795uBF98YP2dZbn8pv1kc680eSybWWvzZiEHHUIhiHQHOz2sjp32OUega41kQLO7VbGLXLaIsSioWBdJ5/lMA==}
+  /@lightningjs/solid@0.15.14(@lightningjs/renderer@0.8.3)(solid-js@1.8.17):
+    resolution: {integrity: sha512-heyi4oNGOPDOG/QiTKFOxQ2w/UQMAaLmhn/FPrZtfBWPFWMdBBenwXPIOpN4vKlJyMxhjVJY435G9BF7zT1TnQ==}
     peerDependencies:
       '@lightningjs/renderer': ^0.8.3
       solid-js: '*'

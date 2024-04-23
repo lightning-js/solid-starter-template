@@ -44,8 +44,8 @@ export default class AppCoreExtension extends CoreExtension {
         { weight: 400 },
         "msdf",
         stage,
-        basePath + "fonts/Ubuntu-Regular.msdf.png",
-        basePath + "fonts/Ubuntu-Regular.msdf.json",
+        "fonts/Ubuntu-Regular.msdf.png",
+        "fonts/Ubuntu-Regular.msdf.json",
       ),
     );
   }

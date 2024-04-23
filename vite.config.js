@@ -25,7 +25,7 @@ export default defineConfig({
     '@lightningjs/renderer/workers/renderer']
   },
   server: {
-    hmr: false,
+    hmr: true,
     headers: {
       'Cross-Origin-Opener-Policy': 'same-origin',
       'Cross-Origin-Embedder-Policy': 'require-corp',

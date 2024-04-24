@@ -19,7 +19,7 @@
   "dependencies": {
     "@lightningjs/l3-ui-theme-base": "^0.3.2",
     "@lightningjs/renderer": "^0.8.3",
-    "@lightningjs/solid": "^0.15.14",
+    "@lightningjs/solid": "^0.15.15",
     "@lightningjs/solid-primitives": "^0.6.6",
     "@lightningjs/solid-ui": "^0.13.1",
     "@solidjs/router": "^0.13.2",

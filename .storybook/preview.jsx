@@ -1,4 +1,4 @@
-import { render } from '@lightningjs/solid';
+import { startLightning, render } from '@lightningjs/solid';
 import { useFocusManager } from '@lightningjs/solid-primitives';
 import coreExtensionModuleUrl from '../src/AppCoreExtensions.js?importChunkUrl';
 
@@ -7,9 +7,11 @@ const RenderOptions = {
   threadXCoreWorkerUrl: undefined,
   rootId: 'storybook-root',
   appWidth: 800,
-  appHeight: 600
+  appHeight: 600,
+  // enableInspector: true
   // deviceLogicalPixelRatio: 1
 };
+
 let dispose;
 const preview = {
   parameters: {
@@ -25,13 +27,10 @@ const preview = {
       const solidRoot = document.createElement('div');
       // teardown previous render (cleans up keyhandling)
       dispose && dispose();
-      
       render(() => {
         useFocusManager();
         return <Story />;
-      }, solidRoot).then(d => {
-        dispose = d.dispose;
-      });
+      }, solidRoot).then(d => { dispose = d.dispose; });
       return solidRoot;
     }
   ]

@@ -14,7 +14,12 @@ Config.fontSettings.color = 0xffffffff;
 Config.rendererOptions = {
   coreExtensionModule: coreExtensionModuleUrl,
   numImageWorkers: 2,
-  // deviceLogicalPixelRatio: 1
+  // Set the resolution based on window height
+  // 720p = 0.666667, 1080p = 1, 1440p = 1.5, 2160p = 2
+  deviceLogicalPixelRatio: window.innerHeight / 1080,
+  enableInspector: true,
+  // Increase to preload images coming from offscreen
+  boundsMargin: 20,
 };
 
 render(() =>  (
